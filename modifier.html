@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-PETITPAS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+      <ul class="navbar-menu">
+        <li class="navbar-item logo"> 
+          <a href="#" class="navbar-link">
+              <i class="petitpas"> <img src="images/index.png" alt="" width="100px"><b>E-PETITPAS</b></i>
+            </a>
+        </li>
+        <hr class="space">
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">
+            Tableau de bord 
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">
+         Ajout Formateur
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">
+          Mes activité
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">
+           Mon compte
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
+
+    </header>
+    <main> 
+        
+     <div class="primary">
+       <input type="search" id="primary-btn">
+       <nav class="container">
+         <ul>
+           <li>
+             <p class="patron">Stephane</p>
+             <a href=""></a>
+            <ul class="sous-menu">
+              <li>
+                <a href=""></a>
+              </li>
+              <li>
+                <a href="">Profil</a>
+              </li>
+              <li>
+                <a href="">Mes activité</a>
+              </li>
+              <li>
+                <a href="">Déconnexion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+     </div>
+     </header>
+      <a href="index.html">
+          <button type="button" class="btn">
+                  Retour
+          </button>
+          <a href="listFormateur.html">
+          <button type="button" class="btn">
+                  Liste
+          </button>
+    </a>
+          <a href="tabFormateur.html">
+          <button type="button" class="btn">
+                  Tableau
+          </button>
+    </a>
+
+          
+    </a>
+    <p> 
+       <h1 class="contact">
+      </h1>
+            <legend> Formateur a contacter </legend>
+        <!---------formulaire----------->
+        <form action="traitement.php" method="post" class="form">
+          <div class="partieA">
+          <label for="nom"></label>
+          <input type="text" name="nom" id="nom" placeholder="Nom :">
+          <label for="prenom"></label>
+          <input type="text" name="prenom" id="prenom" placeholder="Prénom :">
+          <label for="telephone"></label>
+          <input type="tel" name="telephone" id="telephone" placeholder="Tél :">
+          <label for="email"> </label>
+          <input type="email" name="email" id="email" placeholder="Mail :">
+          <label for="reference"></label>
+          <input type="text" name="reference" id="reference" placeholder="Référence : ">
+          <label for="source"></label>
+          <input type="text" name="source" id="source" placeholder="Sources :">
+          <label for="region"></label>
+          <input type="text" name="region" id="region" placeholder="Région :">
+          
+                <a href="AjoutFormateur.html" class="modifier">modifier</a>
+          </div>
+          <div class="partieB">
+
+          <p> Formation choisie </p>
+
+        <p>
+              <label for="choix"></label>
+              <input type="checkbox" name="choix" >
+                      Bureautique Traitement de texte
+               <label for="choix"></label>
+                <input type="checkbox" name="choix" >
+                      Bureautique présentation powerpoint
+                <labe for="choix">Modalité formation choisie
+                </label>
+                <input type="checkbox" name="choix" >
+                      Création de site Web de A a Z
+        </p>
+        <p>
+          <label for="choix"></label>
+            <input type="text" name="choix"placeholder="Modalité formation choisie :">
+          <label for="choix"></label>
+            <input type="text" name="choix"placeholder="En ligne :">
+        
+        
+
+          <label for="message"> </label>
+             <textarea name="message" id="message" cols="40" rows="20" placeholder="Saisie votre remarque"></textarea>
+            </p>
+              <a href="AjoutFormateur.html" class="modifier">modifier</a>
+             </div>
+          
+        
+        </form>
+   
+
+
+    </main>
+    <footer>
+         <p> E-PETITPAS © créer par l'étudiant. All rights reserved.</p>
+    </footer> 
+   
+    
+</body>
+</html>

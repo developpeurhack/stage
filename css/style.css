@@ -1,0 +1,498 @@
+*{
+    box-sizing: border-box;
+}
+body{
+        margin: 0;
+        padding:0;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+}
+/* header */
+.navbar{
+        position:fixed;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        background: rgb(51, 106, 178);
+        width:18rem;
+   
+}
+.navbar-menu{
+        margin:0;
+        padding:0;
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+}
+.navbar-item{
+         width:100%;
+        margin-left:4rem ;
+}
+.navbar-item:hover{
+       
+        background:#fff;
+}
+.navbar-item:hover:nth-child(1){
+        background:none;
+}
+
+.petitpas{
+        margin-left: 10px;
+        font-size: 1.2rem;
+}
+b{
+        float:right;
+        margin-left: 10px;
+        margin-top: 40px;;
+  
+ 
+}
+.navbar-link{
+         display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        width:100%;
+        height:6rem;
+        color:black;
+        font-size: 1.5em;
+}
+.logo{
+        margin-left:2rem;
+        font-size: 2rem;
+}
+
+.space{
+         height:0.3rem;
+        background-color: black;
+        width:100%;
+}
+/* main */
+main {
+    
+        padding-left: 12rem;
+        margin-left: 10rem;
+        text-align: justify;
+        width: 100%;
+  
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+        width:100%;
+        margin:0px auto;
+        padding-right: 15px;
+   
+}
+.primary #primary-btn{
+        width:300px;
+        height :50px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+}
+.container li{
+        display:flex;
+        vertical-align: top;
+        position: relative;
+        justify-content:end;
+    /* align-items: start; */
+   
+}
+.container li a{
+        display:block;
+        padding: 30px 20px;
+        background:rgb(51, 106, 178);    
+      
+}
+
+.container li:hover a{   
+        color: black;
+}
+.container li:nth-child(1) a:nth-child(2){   
+         border-radius:50%;
+        color: black;
+        
+      
+}
+.container li:hover .sous-menu{
+    display: block;
+}
+.sous-menu{
+        width:180px;
+        display:none;
+        position:absolute;
+       
+}
+.sous-menu li{
+    display:block;
+}
+.sous-menu li:hover a{
+    background-color:blue;
+    border-radius: 5px;
+    color:black;  
+}
+.sous-menu li:hover a{
+    color:black;
+    
+}
+.sous-menu li a{
+        color :#fff;
+}
+.primary {
+        border: 2px solid black;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        width: 80%;
+        display:flex;
+}
+.container .patron{
+        text-align: center ;
+        margin-right: 15px;
+}
+.primary #primary-btn{
+        width: 100%;
+}
+.primary input[type="search"]{
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: 2px solid black ;
+}
+
+/*  card */
+.gallery{
+        width:80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        gap:10px;
+    
+}
+ .card {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:220px;
+        height: 150px;
+}
+ i{
+        font-size: 15px;
+}
+i a{
+        color:black;
+}
+.carda{
+        border:2px solid rgb(238, 36, 36);
+   
+}
+.cardb{
+        border:2px solid rgb(51, 106, 178);;
+}
+.cardc{
+        border:2px solid grey;
+}
+.cardd{
+        border:2px solid green;
+}
+ 
+/* modifier form */
+
+ .modifier {
+        padding : 10px 150px ;
+        background : rgb(51, 106, 178);
+        border-radius: 10px;
+        border: 1px solid black;
+        color:black;
+}
+
+/* formulaire ajoutFormateur */
+
+main .form{ 
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+    padding: 20px;
+     width:80% 
+}
+
+.form input{
+    width:30%;
+    border:1px solid black;
+    padding:10px;
+    border-radius: 10px; 
+}
+
+.form input[type="text"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+.form input[type="email"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+textarea[name="message"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width:40%;
+     border: 1px solid black ; 
+    height: 100px;
+    resize: none;
+}
+.form input[type="checkbox"]{
+margin-top: 15px;
+margin-bottom: 15px;
+width:15px;
+}
+.form input[type="file"]{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 20%;
+
+}
+.form input[type="submit"]{
+        width:40%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: rgb(51, 106, 178);
+
+}
+.partieA{
+        border:2px solid green;
+}
+.partieB{
+        margin-top: 10px;
+        border:2px solid green;
+        padding-bottom: 20px;
+}
+/*  cv.html */
+.btn{
+    
+        background : rgb(51, 106, 178);
+        color:black;
+        padding: 15px 25px;
+        border-radius: 5px;;
+}
+.btn:hover{
+        background: rgb(60, 134, 168);
+}
+/* page profil ---> afficherplus.html */
+
+ .profil{
+        font-size:1rem;
+        padding:30px;
+        background:transparent;
+        border-radius: 50%; 
+        border:2px solid black;
+        float:left;
+        color:black;
+
+}
+.profils{
+        text-align: start;
+       display:flex;
+       justify-content:space-between;
+}
+
+
+.modify{
+        background:rgb(51, 106, 178);
+        padding: 10px 30px;
+        border: 1px solid black;
+        color:black;
+}
+
+.modif{
+        background:white;
+        padding: 10px 80px ;
+        border :1px solid black;
+        color:black;
+}
+.plus{
+      display:flex;
+      flex-direction: row-reverse;
+      justify-content:space-between;
+      padding-top:20px;
+
+}
+
+/*  tableau    */
+
+.table{
+        width:80%;
+        border-collapse: collapse;
+        border: 2px solid white;
+}
+th, td{
+        padding: 20px;
+}
+tr{
+        border: 1px solid black;
+}
+tbody tr:nth-child(odd){
+        background: rgb(153, 177, 214);
+}
+tbody tr:nth-child(even){
+        background: rgb(178, 188, 212);
+}
+tbody td, th{
+        text-align: center;
+       
+}
+thead tr{
+        background: rgb(51, 106, 178);
+      
+}
+
+td a{
+        color: blue;
+}
+
+td a:hover{
+        color:red;
+}
+
+
+/* footer */
+
+footer  {
+       
+        width:100%;
+        background : rgb(51, 106, 178);
+        height: 50px;
+        display:grid;
+        margin-top: 550px;
+        place-content: center;
+        /* place-items:center; */
+        /* gap:20px; */
+        
+}
+
+
+      
+      
+
+/* responsive   tablette et mobile*/
+
+
+@media only screen and (max-width: 992px){
+    .navbar{
+        width:100%;
+        top:auto;
+        bottom:0;
+        display:flex;
+        justify-content:center;
+    }
+
+    .navbar-menu{
+        flex-direction: row;
+    }
+
+    .navbar-link{
+        justify-content:center;
+       
+    }
+      .navbar-item{
+        width:100%;
+        margin: 0 auto; 
+        padding-left :10px;  
+
+    }
+
+    .space{
+        display:none;
+    }
+    .logo{
+        display :none;
+    }
+    main {
+        margin-bottom: 7rem;
+        margin-left: 5px;
+        padding-left: 5px;
+        width:100%;
+    }
+    .gallery{
+        width:100%;
+        padding-right: 10px;
+    }
+    .primary{
+        width:100%;
+        
+    }
+  
+    table{
+        width:100%;
+    }
+    footer{
+        display:none;
+        
+    }
+    .table{
+        width: 100%;
+      
+    }
+    
+     .form{
+        width:100%;
+        margin: 0 auto;
+       
+    }
+    .modifier{
+        
+        display:flex;
+        justify-content:center;
+       
+    }
+}
+
+@media  screen and (max-width:668px) {
+       
+      .gallery{
+        justify-content: center;
+      }
+   
+    .navbar-item{
+        width:100%;
+        margin: 0 auto;
+        padding-left: 15px;
+         border: 1px solid #fff;
+       
+
+    }
+    .mod{
+        display:flex;
+        flex-direction:column ;
+    }
+    .form{
+        width:100%;
+        margin: 0 auto;
+       
+    }
+    .modifier{
+        
+        display:flex;
+        justify-content:center;
+       
+    }
+    .partieA, .partieB{
+      width:100%;
+     background: rgb(237, 237, 244);
+     margin:10px auto;
+     
+    }
+    
+    .table{
+        width: 100%;
+      
+    }
+}
+
+
+
+
