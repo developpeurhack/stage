@@ -96,13 +96,13 @@
         <form action="traitement.php" method="post" class="form">
           <div class="partieA">
           <label for="nom"></label>
-          <input type="text" name="nom" id="nom" placeholder="Nom :">
+          <input type="text" name="nom" id="nom" placeholder="Nom :" required>
           <label for="prenom"></label>
-          <input type="text" name="prenom" id="prenom" placeholder="Prénom :">
+          <input type="text" name="prenom" id="prenom" placeholder="Prénom :" required>
           <label for="telephone"></label>
-          <input type="tel" name="telephone" id="telephone" placeholder="Tél :">
+          <input type="tel" name="telephone" id="telephone" placeholder="Tél :"  pattern="^(\\+33|0|0033)[1-9][0-9]{8}$"  required>
           <label for="email"> </label>
-          <input type="email" name="email" id="email" placeholder="Mail :">
+          <input type="email" name="email" id="email" placeholder="Mail :"  pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required>
           <label for="reference"></label>
           <input type="text" name="reference" id="reference" placeholder="Référence : ">
           <label for="source"></label>

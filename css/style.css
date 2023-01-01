@@ -7,7 +7,7 @@ body{
         font-family:Arial, Helvetica, sans-serif;
         font-size: 16px;
 }
-/* header */
+/* -----------------header ------------------*/
 .navbar{
         position:fixed;
         top:0px;
@@ -164,7 +164,7 @@ a{
         border: 2px solid black ;
 }
 
-/*  card */
+/*  -----------------card ------------------*/
 .gallery{
         width:80%;
         display: flex;
@@ -200,7 +200,7 @@ i a{
         border:2px solid green;
 }
  
-/* modifier form */
+/* ----------------------modifier form-------------------*/
 
  .modifier {
         padding : 10px 150px ;
@@ -210,7 +210,7 @@ i a{
         color:black;
 }
 
-/* formulaire ajoutFormateur */
+/* -------------------formulaire ajoutFormateur------------*/
 
 main .form{ 
     border-radius: 10px;
@@ -271,7 +271,7 @@ width:15px;
         border:2px solid green;
         padding-bottom: 20px;
 }
-/*  cv.html */
+/* -------------------- cv.html ----------------------*/
 .btn{
     
         background : rgb(51, 106, 178);
@@ -282,7 +282,7 @@ width:15px;
 .btn:hover{
         background: rgb(60, 134, 168);
 }
-/* page profil ---> afficherplus.html */
+/* -----------page profil ---> afficherplus.html ------------------*/
 
  .profil{
         font-size:1rem;
@@ -321,8 +321,11 @@ width:15px;
       padding-top:20px;
 
 }
+.pro p a{
+color: black;
+}
 
-/*  tableau    */
+/* ------------------ tableau --------------   */
 
 .table{
         width:80%;
@@ -359,7 +362,7 @@ td a:hover{
 }
 
 
-/* footer */
+/* ---------   footer --------------------*/
 
 footer  {
        
@@ -378,7 +381,7 @@ footer  {
       
       
 
-/* responsive   tablette et mobile*/
+/* --------responsive   tablette et mobile------------------*/
 
 
 @media only screen and (max-width: 992px){
@@ -402,9 +405,8 @@ footer  {
         width:100%;
         margin: 0 auto; 
         padding-left :10px;  
-
     }
-
+    
     .space{
         display:none;
     }
@@ -423,11 +425,12 @@ footer  {
     }
     .primary{
         width:100%;
-        
+         margin-right: 15px;  
     }
   
     table{
         width:100%;
+       
     }
     footer{
         display:none;
@@ -441,7 +444,6 @@ footer  {
      .form{
         width:100%;
         margin: 0 auto;
-       
     }
     .modifier{
         
@@ -462,8 +464,6 @@ footer  {
         margin: 0 auto;
         padding-left: 15px;
          border: 1px solid #fff;
-       
-
     }
     .mod{
         display:flex;
@@ -472,7 +472,6 @@ footer  {
     .form{
         width:100%;
         margin: 0 auto;
-       
     }
     .modifier{
         
@@ -488,9 +487,9 @@ footer  {
     }
     
     .table{
-        width: 100%;
-      
+        width: 100%;  
     }
+   
 }
 
 

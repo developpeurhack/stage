@@ -87,17 +87,17 @@
         <form action="traitement.php" method="post" class="form">
           <div class="partieA">
           <label for="nom"></label>
-          <input type="text" name="nom" id="nom" placeholder="Nom :" required>
+          <input type="text" name="nom" id="nom" placeholder="Nom :" required  pattern="[A-Za-z]{4, 9}">
           <label for="prenom"></label>
-          <input type="text" name="prenom" id="prenom" placeholder="Prénom :" required>
+          <input type="text" name="prenom" id="prenom" placeholder="Prénom :" required  pattern="[A-Za-z]{4, 9}">
           <label for="telephone"></label>
-          <input type="tel" name="telephone" id="telephone" placeholder="Tél :" required>
-          <label for="email"> </label>
+          <input type="tel" name="telephone" id="telephone" placeholder="Tél :"  pattern="^(\\+33|0|0033)[1-9][0-9]{8}$">
+
           <input type="email" name="email" id="email" placeholder="Mail :"  required>
           <label for="age"></label>
           <input type="number" name="age" id="age" placeholder="Entrez votre age : " required>
           <label for="mdp"></label>
-          <input type="password" name="mdp" id="mdp" placeholder="créer un mot de passe valide :">
+          <input type="password" name="mdp" id="mdp" placeholder="créer un mot de passe valide :" required  pattern= "^(?=.*[0-9])+(?=.*[az])+(?=.*[AZ]){8,16}$" >
           <label for="mdp"></label>
           <input type="password" name="mdp" id="mdp" placeholder="confirmer votre mot de passe  :"  required>
          <a href="" class="modifier">créer </a>
@@ -106,11 +106,11 @@
           <p>si vous avez un compte passer a l'étape : Connexion </p>
         <p>
               <label for="nom"></label>
-          <input type="text" name="nom" id="nom" placeholder="Nom :">
+          <input type="text" name="nom" id="nom" placeholder="Nom :" required>
           <label for="choix"></label>
-            <input type="text" name="choix"placeholder="Entrez votre email :">
+            <input type="text" name="choix"placeholder="Entrez votre email :" pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" required>
           <label for="mdp"></label>
-            <input type="password" name="mdp"placeholder="Entrez votre mot de passe  :">
+            <input type="password" name="mdp"placeholder="Entrez votre mot de passe  :"  pattern= "^(?=.*[0-9])+(?=.*[az])+(?=.*[AZ]){8,16}$" required>
             </p>
               <a href="afficherPlus.html" class="modifier">connexion</a>
              </div>
@@ -118,7 +118,7 @@
    
     </main>
     <footer>
-         <p> E-PETITPAS © créer par l'étudiant. All rights reserved.</p>
+         <p> E-PETITPAS © créer par l'étudiant - MK. All rights reserved.</p>
     </footer> 
    
     
